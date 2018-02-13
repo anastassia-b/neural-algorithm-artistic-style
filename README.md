@@ -16,3 +16,33 @@ The goal of this project is to transfer the style of an artwork to the content o
 
 * ["Perceptual Losses for Real-Time Style Transfer and Super-Resolution"](https://arxiv.org/abs/1603.08155) (Johnson, et al. 2016)
 * Speed up style transfer by training a network that generates the style transferred images. This will use a deep convolutional generator network (along with batch normalization and residual blocks).
+
+
+## Reference
+VGG16 Summary:
+* Total params: 14,714,688
+* Trainable params: 0
+* Non-trainable params: 14,714,688
+
+|Layer (type) |                Output Shape   |           Param # |
+| --- | --- | --- |
+|input_1 (InputLayer)  |       (None, 768, 1024, 3)  |    0   |
+|block1_conv1 (Conv2D)  |      (None, 768, 1024, 64)  |   1792    |  
+|block1_conv2 (Conv2D)    |    (None, 768, 1024, 64)  |   36928     |
+|block1_pool (MaxPooling2D)  | (None, 384, 512, 64)    |  0         |
+|block2_conv1 (Conv2D)   |     (None, 384, 512, 128)   |  73856     |
+|block2_conv2 (Conv2D)   |     (None, 384, 512, 128)   |  147584    |
+|block2_pool (MaxPooling2D)  | (None, 192, 256, 128)  |   0        |
+|block3_conv1 (Conv2D)    |    (None, 192, 256, 256)  |   295168   |
+|block3_conv2 (Conv2D)    |    (None, 192, 256, 256)   |  590080    |
+|block3_conv3 (Conv2D)    |    (None, 192, 256, 256)  |   590080    |
+|block3_pool (MaxPooling2D) |  (None, 96, 128, 256)  |    0         |
+|block4_conv1 (Conv2D)   |     (None, 96, 128, 512)  |    1180160   |
+|block4_conv2 (Conv2D)    |    (None, 96, 128, 512)   |   2359808   |
+|block4_conv3 (Conv2D)    |    (None, 96, 128, 512)   |   2359808   |
+|block4_pool (MaxPooling2D) |  (None, 48, 64, 512)    |   0         |
+|block5_conv1 (Conv2D)     |   (None, 48, 64, 512)    |   2359808   |
+|block5_conv2 (Conv2D)     |   (None, 48, 64, 512)    |   2359808   |
+|block5_conv3 (Conv2D)    |    (None, 48, 64, 512)    |   2359808   |
+|block5_pool (MaxPooling2D) |  (None, 24, 32, 512)    |   0         |
+|global_average_pooling2d_1 |( (None, 512)            |   0         |
