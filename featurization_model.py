@@ -38,7 +38,7 @@ def build_style_matrix(vgg_feature_tensor):
     flattened_feature_tensor = K.reshape(
         perm_feature_tensor, (-1, num_channels, height * width))
 
-    transposed_feature_tensor = K.permute_dimenstions(
+    transposed_feature_tensor = K.permute_dimensions(
         flattened_feature_tensor, (0, 2, 1))
 
     style_matrix = (K.batch_dot
