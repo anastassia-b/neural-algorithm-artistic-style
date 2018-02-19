@@ -10,6 +10,15 @@ The goal of this project is to transfer the style of an artwork to the content o
 
 ## Results
 
+#### 1
+![milan-style](/docs/result_milan.jpg)
+
+**Figure 1:** Content is captured from the Duomo di Milano image. Styles from Cézanne and Monet are transferred with some success. I decide to experiment more with hyper-parameters to tune the model.
+
+#### 2
+![shrine-style](/docs/result_shrine.jpg)
+
+**Figure 2:** Content: Itsukushima Shrine, Style: Cézanne. Learning rate: 10.0, Epochs: 3000. This takes 25 minutes to train on AWS EC2 instance-- performance is what I want to improve next.
 
 
 ## Future Directions
