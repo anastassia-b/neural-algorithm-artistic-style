@@ -25,7 +25,7 @@ The goal of this project is to transfer the style of an artwork to the content o
 
 **Figure 3:** Content: Tubingen. Style: Van Gogh. I saved the image after every 100 epochs as the model trained, obtaining the learning process in action!
 <p align="center">
-![starry-gif](/docs/starry_tubingen_ab.gif)
+  <img src="/docs/starry_tubingen_ab.gif">
 </p>
 
 ## Future Directions
