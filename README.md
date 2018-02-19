@@ -20,6 +20,13 @@ The goal of this project is to transfer the style of an artwork to the content o
 
 **Figure 2:** Content: Itsukushima Shrine, Style: Cézanne. Learning rate: 10.0, Epochs: 3000. This takes 25 minutes to train on AWS EC2 instance-- performance is what I want to improve next.
 
+#### 3
+![starry-style](/docs/result_starry-night.jpg)
+
+**Figure 3:** Content: Tubingen. Style: Van Gogh.
+
+
+
 
 ## Future Directions
 
