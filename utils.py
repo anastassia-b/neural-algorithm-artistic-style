@@ -29,7 +29,7 @@ def save_image(path, image_data):
     image_data[:, :, 0] = red
     image_data[:, :, 2] = blue
     # correcting the range
-    image_data = np.clip(im_data, 0, 255)
+    image_data = np.clip(image_data, 0, 255)
     image_data = image_data.astype(np.uint8)
     image = Image.fromarray(image_data)
     image.save(path)
