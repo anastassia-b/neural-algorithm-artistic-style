@@ -15,7 +15,7 @@ content_value, *_ = featurization_model.predict(
 print(content_value.shape)
 
 print("Calculating style matrices")
-style_im_data = load_image('./input/style_klimt.jpg')
+style_im_data = load_image('./input/style_klimt_kiss.jpg')
 _, *style_values = featurization_model.predict(
     np.expand_dims(style_im_data, axis=0)
 )
