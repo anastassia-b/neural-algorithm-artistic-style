@@ -28,7 +28,7 @@ input_tensor = Input(shape=(1,))
 image_layer = Dense((768 * 1024 * 3), activation='linear', use_bias=False)
 
 image_tensor = image_layer(input_tensor)
-reshaped_image = Reshape((768, 2014, 3))(image_tensor)
+reshaped_image = Reshape((768, 1024, 3))(image_tensor)
 
 content_tensor, *style_tensors = featurization_model(reshaped_image)
 feature_tensors = [content_tensor, *style_tensors]
