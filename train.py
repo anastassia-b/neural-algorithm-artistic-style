@@ -8,14 +8,14 @@ from utils import load_image, save_image
 import numpy as np
 
 print("Calculating content features")
-content_im_data = load_image('./input/content_milan.jpg')
+content_im_data = load_image('./input/content_mit.jpg')
 content_value, *_ = featurization_model.predict(
     np.expand_dims(content_im_data, axis=0)
 )
 print(content_value.shape)
 
 print("Calculating style matrices")
-style_im_data = load_image('./images/style_monet2.jpg')
+style_im_data = load_image('./input/style_klimt.jpg')
 _, *style_values = featurization_model.predict(
     np.expand_dims(style_im_data, axis=0)
 )
@@ -54,6 +54,5 @@ training_model.fit(
     target_values,
     batch_size=1,
     epochs=3000,
-    verbose,
     callbacks=[LambdaCallback(on_epoch_end=save_int_image)]
 )
