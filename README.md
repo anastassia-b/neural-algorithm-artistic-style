@@ -28,6 +28,11 @@ The goal of this project is to transfer the style of an artwork to the content o
   <img src="/docs/starry_tubingen_ab.gif">
 </p>
 
+#### 4
+![mit-klimt](/docs/result_mit_klimt.jpg)
+
+**Figure 4:** Content: MIT Photograph. Style: Klimt. I played around and increased the preference for content over style up to 25.
+
 ## Future Directions
 
 * ["Perceptual Losses for Real-Time Style Transfer and Super-Resolution"](https://arxiv.org/abs/1603.08155) (Johnson, et al. 2016)
